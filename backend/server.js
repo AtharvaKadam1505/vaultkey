@@ -27,7 +27,7 @@ app.use(helmet())
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
-  'https://vaultkey-tau.vercel.app/',
+  'https://myvaultkey.netlify.app/',
   process.env.FRONTEND_URL,
 ].filter(Boolean)
 
