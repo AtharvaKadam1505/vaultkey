@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "server.js"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "CLERK_SECRET_KEY": "@clerk_secret_key",
+    "ENCRYPTION_SECRET": "@encryption_secret",
+    "FRONTEND_URL": "@frontend_url"
+  }
+}
